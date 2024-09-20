@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+        <title>Firebase Data Table</title>
+        <style>
+          table {
+            width: 100%;
+            border-collapse: collapse;
+          }
+          table, th, td {
+            border: 1px solid black;
+          }
+          th, td {
+            padding: 10px;
+            text-align: left;
+          }
+
+          .btn-custom {
+            background-color: #007bff; /* Blue button */
+            color: white;
+            border: none;
+            align-items: center;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        #h2{
+            margin: 20px 0px 0px 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        </style>
+      </head>
+      <body>
+        <div>
+
+            <h2 id="h2">Students Data</h2>
+            
+                <button  onclick="show()" class="btn btn-primary mt-3 ml-3 wx-100 ">Show Data</button>
+                <button  onclick="window.location.href = 'uploaddetail.html' " class="btn ml-3 btn-primary mt-3 wx-100">Go Back</button>
+             
+            
+
+            <br>
+            <br>
+        </div>
+
+        <table id="data-table">
+          <thead>
+            <tr>
+                <th>Student ID</th>
+              <th>Student Name</th>
+              <th>Coures</th>
+              <th>CNIC</th>
+              <th>Marks</th>
+              <th>Total Marks</th>
+              <th>Grade</th>
+            </tr>
+            
+          </thead>
+          <tbody>
+            <!-- Data will be inserted here -->
+          </tbody>
+        </table>
+
+        <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script type="module" src="showstudentdetail.js"></script>
+      </body>
+</html>

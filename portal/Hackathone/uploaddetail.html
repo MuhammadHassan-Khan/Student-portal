@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student Marks</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+        }
+        .form-container {
+            background-color: white; /* White form background */
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        .form-title {
+            background-color: #007bff; /* Blue header */
+            color: white;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: #007bff; /* Blue button */
+            color: white;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <div class="form-title">
+            <h3>Add Student Marks</h3>
+        </div>
+        
+        <form id="marksForm">
+            <div class="form-group">
+                <label for="studentID">Student ID</label>
+                <input type="text" class="form-control" id="studentID" placeholder="Enter Student ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cnic">CNIC</label>
+                <input type="text" class="form-control" id="cnic" placeholder="Enter CNIC" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="course">Course</label>
+                <input type="text" class="form-control" id="course" placeholder="Enter Course" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="marks">Marks</label>
+                <input type="number" class="form-control" id="marks" placeholder="Enter Marks" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="totalMarks">Total Marks</label>
+                <input type="number" class="form-control" id="totalMarks" placeholder="Enter Total Marks" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="grade">Grade</label>
+                <input type="text" class="form-control" id="grade" placeholder="Enter Grade" required>
+            </div>
+
+            <button type="submit" class="btn btn-custom btn-block">Submit Marks</button>
+            <button onclick="window.location.href='admin.html'" class="btn btn-custom btn-block"><=== Add Student</button>
+            <button onclick="window.location.href='showstudentdetail.html'" class="btn btn-custom btn-block">Student detail list</button>
+        </form>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="module" src="uploaddetail.js"></script>
+
+</body>
+</html>
